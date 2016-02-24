@@ -1,0 +1,72 @@
+<!--you simply create a new repository, called anything.github.io and then add files and then use github desktop, clone to master, and then create new files on the site, and then edit the files via the github desktop software, as it gives you the location of where the clone is
+its really easy to do
+http://scottmike0.github.io/
+example
+not much, but its somethin -->
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="pomodoro.css">
+        
+        <title>Pomodoro</title>
+    </head>
+    
+    <body>
+        
+        <div class="container-fluid">
+            <div class="container">
+                
+                <div><h1>POMODORO CLOCK<hr></h1></div>
+                <div class="round-button">
+                    <!--div class="round-button-circle"-->
+                        <button href="" class="btn btn-primary round-button" id="giantclock"></button>
+                    <!--/div-->
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn-lg btn-primary col-sm-6 col-xs-12" id="start"
+                    onclick="start_time()">Start</button>
+                    <button class="btn-lg btn-danger col-sm-6 col-xs-12" id="start"
+                    onclick="stop_time()">Stop</button>
+                </div>
+                
+                <div class="break col-sm-2">
+                    <button class="btn-lg btn-primary col-sm-8 col-sm-offset-2" id="plus_break"
+                    onclick="increase_break()">+</button>
+                        <div class="input-group col-sm-8 col-sm-offset-2 col-xs-6">
+                            <input type="text" class="form-control" id="break_time">
+                        </div>
+                    <button class="btn-lg btn-danger col-sm-8 col-sm-offset-2" id="subtract_break"
+                    onclick="decrease_break()">-</button>
+                </div>
+                
+                <div class="work col-sm-2">
+                    <button class="btn-lg btn-primary col-sm-8 col-sm-offset-2" id="plus_work"
+                    onclick="increase_work()">+</button>
+                        <div class="input-group col-sm-8 col-sm-offset-2 col-xs-6 col-xs-offset-4">
+                            <input type="text" class="form-control" id="work_time">
+                        </div>
+                    <button class="btn-lg btn-danger col-sm-8 col-sm-offset-2" id="subtract_work"
+                    onclick="decrease_work()">-</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="pomodoro.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+        </script>
+    </body>
+</html>
